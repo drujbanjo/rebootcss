@@ -1,0 +1,696 @@
+$reboot: (
+  a: (
+    "attr": (
+      "href": (
+        text-decoration: underline,
+        cursor: pointer,
+        color: rgb(38 38 255),
+      ),
+    ),
+    "styles": (
+      display: inline,
+    ),
+  ),
+  abbr: (
+    "attr": (
+      "title": (
+        text-decoration: underline dotted,
+      ),
+    ),
+  ),
+  address: (
+    "styles": (
+      display: block,
+      font-style: italic,
+      unicode-bidi: isolate,
+    ),
+  ),
+  area: (
+    "styles": (
+      display: inline,
+    ),
+  ),
+  article: (
+    "styles": (
+      display: block,
+      unicode-bidi: isolate,
+    ),
+  ),
+  aside: (
+    "styles": (
+      display: block,
+      unicode-bidi: isolate,
+    ),
+  ),
+  audio: (
+    "pseudo-class": (
+      "not": (
+        "attr": (
+          "[control]": (
+            display: none,
+          ),
+        ),
+      ),
+    ),
+  ),
+  b: (
+    "styles": (
+      font-weight: bold,
+    ),
+  ),
+  base: (
+    "styles": (
+      display: none,
+    ),
+  ),
+  bdi: (
+    "styles": (
+      unicode-bidi: isolate,
+    ),
+  ),
+  bdo: (
+    "attr": (
+      "dir": (
+        unicode-bidi: isolate-override,
+      ),
+    ),
+    "styles": (
+      unicode-bidi: isolate-override,
+    ),
+  ),
+
+  blockquote: (
+    "styles": (
+      margin-block: 1em,
+      padding-inline: 2.5rem,
+      unicode-bidi: isolate,
+    ),
+  ),
+
+  body: (
+    "styles": (
+      display: block,
+      margin: 0,
+    ),
+  ),
+
+  br: (
+    "styles": (
+      display: block,
+      min-height: 1px,
+      margin-block-end: 1px,
+      margin-block-start: 1px,
+    ),
+  ),
+
+  button: (
+    "styles": (
+      appearance: auto,
+      font-style: inherit,
+      font-weight: inherit,
+      font-size: inherit,
+      font-family: inherit,
+      text-rendering: auto,
+      color: #000,
+      letter-spacing: normal,
+      word-spacing: normal,
+      line-height: normal,
+      text-transform: none,
+      text-indent: 0,
+      text-shadow: none,
+      display: inline-block,
+      text-align: center,
+      align-items: flex-start,
+      cursor: default,
+      box-sizing: border-box,
+      background-color: #f0f0f0,
+      margin: 0,
+      padding-block: 1px,
+      padding-inline: 6px,
+      border-width: 2px,
+      border-style: outset,
+      border-color: #1c1c1b,
+      border-image: initial,
+    ),
+  ),
+  canvas: (
+    "styles": (
+      overflow-clip-margin: content-box,
+      overflow: clip,
+    ),
+  ),
+  caption: (
+    "styles": (
+      text-align: center,
+      display: table-caption,
+      unicode-bidi: isolate,
+    ),
+  ),
+  cite: (
+    "styles": (
+      font-style: italic,
+    ),
+  ),
+  code: (
+    "styles": (
+      font-family: monospace,
+    ),
+  ),
+  col: (
+    "styles": (
+      display: table-column,
+      unicode-bidi: isolate,
+    ),
+  ),
+  colgroup: (
+    "styles": (
+      display: table-column-group,
+      unicode-bidi: isolate,
+    ),
+  ),
+  datalist: (
+    "styles": (
+      display: none,
+    ),
+  ),
+  dd: (
+    "styles": (
+      display: block,
+      margin-inline-start: 40px,
+      unicode-bidi: isolate,
+    ),
+  ),
+  del: (
+    "styles": (
+      text-decoration: line-through,
+    ),
+  ),
+  dfn: (
+    "styles": (
+      font-style: italic,
+    ),
+  ),
+  dialog: (
+    "styles": (
+      display: none,
+      position: absolute,
+      inset-inline-start: 0,
+      inset-inline-end: 0,
+      width: fit-content,
+      height: fit-content,
+      color: inherit,
+      margin: auto,
+      border-width: initial,
+      border-style: solid,
+      border-color: initial,
+      border-image: initial,
+      padding: 1em,
+    ),
+  ),
+  div: (
+    "styles": (
+      display: block,
+      unicode-bidi: isolate,
+    ),
+  ),
+  dl: (
+    "styles": (
+      display: block,
+      margin-block-start: 1em,
+      margin-block-end: 1em,
+      margin-inline-start: 0,
+      margin-inline-end: 0,
+      unicode-bidi: isolate,
+    ),
+  ),
+  dt: (
+    "styles": (
+      display: block,
+      unicode-bidi: isolate,
+    ),
+  ),
+  em: (
+    "styles": (
+      font-style: italic,
+    ),
+  ),
+  embed: (
+    "styles": (
+      overflow-clip-margin: content-box,
+      overflow: clip,
+    ),
+  ),
+  fieldset: (
+    "styles": (
+      display: block,
+      margin-inline-start: 2px,
+      margin-inline-end: 2px,
+      padding-block-start: 0.35em,
+      padding-inline-start: 0.75em,
+      padding-inline-end: 0.75em,
+      padding-block-end: 0.625em,
+      min-inline-size: min-content,
+      border-width: 2px,
+      border-style: groove,
+      border-color: rgb(192 192 192),
+      border-image: initial,
+    ),
+  ),
+  figcaption: (
+    "styles": (
+      display: block,
+      unicode-bidi: isolate,
+    ),
+  ),
+  figure: (
+    "styles": (
+      display: block,
+      margin-block-start: 1em,
+      margin-block-end: 1em,
+      margin-inline-start: 40px,
+      margin-inline-end: 40px,
+      unicode-bidi: isolate,
+    ),
+  ),
+  footer: (
+    "styles": (
+      display: block,
+      unicode-bidi: isolate,
+    ),
+  ),
+  form: (
+    "styles": (
+      display: block,
+      margin-top: 0,
+      unicode-bidi: isolate,
+    ),
+  ),
+  header: (
+    "styles": (
+      display: block,
+      unicode-bidi: isolate,
+    ),
+  ),
+  hr: (
+    "styles": (
+      display: block,
+      margin-block-start: 0.5em,
+      margin-block-end: 0.5em,
+      margin-inline-start: auto,
+      margin-inline-end: auto,
+      unicode-bidi: isolate,
+      overflow: hidden,
+      border-style: inset,
+      border-width: 1px,
+    ),
+  ),
+  i: (
+    "styles": (
+      font-style: italic,
+    ),
+  ),
+  iframe: (
+    "attr": (
+      "frameborder": (
+        border-top-width: 0,
+        border-bottom-width: 0,
+        border-left-width: 0,
+        border-right-width: 0,
+      ),
+    ),
+    "styles": (
+      overflow-clip-margin: content-box,
+      overflow: clip,
+      border-width: 2px,
+      border-style: inset,
+      border-color: initial,
+      border-image: initial,
+    ),
+  ),
+  img: (
+    "styles": (
+      overflow-clip-margin: content-box,
+      overflow: clip,
+    ),
+  ),
+  input: (
+    "pseudo-class": (
+      "not": (
+        "attr": (
+          '[type="image"], [type="range"], [type="checkbox"], [type="radio"]': (
+            overflow-clip-margin: 0,
+            overflow: clip,
+          ),
+        ),
+      ),
+      "focus": (
+        "styles": (
+          box-shadow: 0 0 0 0.2rem rgba(16 185 129 / 50%),
+          outline: 0,
+        ),
+      ),
+    ),
+    "attr": (
+      'type="radio"': (
+        background-color: initial,
+        cursor: pointer,
+        appearance: auto,
+        box-sizing: border-box,
+        margin: 0,
+        padding: initial,
+        border: initial,
+      ),
+      'type="checkbox"': (
+        background-color: initial,
+        cursor: pointer,
+        appearance: auto,
+        box-sizing: border-box,
+        margin: 0,
+        padding: initial,
+        border: initial,
+      ),
+      'type="range"': (
+        appearance: auto,
+        cursor: pointer,
+        color: light-dark(rgb(16 16 16), rgb(255 255 255)),
+        padding: initial,
+        border: initial,
+        margin: 2px,
+      ),
+      'type="password"': (
+        -webkit-text-security: disc,
+      ),
+      "disabled": (
+        cursor: default,
+        opacity: 0.6,
+      ),
+    ),
+    "styles": (
+      font-style: normal,
+      font-weight: 400,
+      font-size: 1rem,
+      font-family: inherit,
+      text-rendering: auto,
+      color: inherit,
+      letter-spacing: normal,
+      word-spacing: normal,
+      line-height: 1.5,
+      text-transform: none,
+      text-indent: 0,
+      text-shadow: none,
+      display: inline-block,
+      text-align: start,
+      transition: box-shadow 0.3s ease-in-out,
+      appearance: auto,
+      cursor: text,
+      margin: 0,
+      border-width: 1px,
+      border-style: solid,
+      border-color: light-dark(#aaa, #414141),
+      border-image: initial,
+      border-radius: 6px,
+      padding: 6px 12px,
+    ),
+  ),
+  ins: (
+    "styles": (
+      text-decoration: underline,
+    ),
+  ),
+  kbd: (
+    "styles": (
+      font-family: monospace,
+    ),
+  ),
+  label: (
+    "styles": (
+      cursor: default,
+    ),
+  ),
+  legend: (
+    "styles": (
+      display: block,
+      padding-inline-start: 2px,
+      padding-inline-end: 2px,
+      unicode-bidi: isolate,
+      border-width: initial,
+      border-style: none,
+      border-color: initial,
+      border-image: initial,
+    ),
+  ),
+  main: (
+    "styles": (
+      display: block,
+      unicode-bidi: isolate,
+    ),
+  ),
+  map: (
+    "styles": (
+      display: inline,
+    ),
+  ),
+  mark: (
+    "styles": (
+      background-color: #ff0,
+      color: light-dark(#000, #fff),
+    ),
+  ),
+  meta: (
+    "styles": (
+      display: none,
+    ),
+  ),
+  meter: (
+    "styles": (
+      appearance: auto,
+      box-sizing: border-box,
+      display: inline-block,
+      block-size: 1em,
+      inline-size: 5em,
+      vertical-align: -0.2em,
+      -webkit-user-modify: read-only,
+    ),
+  ),
+  nav: (
+    "styles": (
+      display: block,
+      unicode-bidi: isolate,
+    ),
+  ),
+  object: (
+    "styles": (
+      overflow-clip-margin: content-box,
+      overflow: clip,
+    ),
+  ),
+  ol: (
+    "styles": (
+      display: block,
+      list-style-type: decimal,
+      margin-block-start: 1em,
+      margin-block-end: 1em,
+      margin-inline-start: 0,
+      margin-inline-end: 0,
+      padding-inline-start: 40px,
+      unicode-bidi: isolate,
+    ),
+  ),
+  optgroup: (
+    "styles": (
+      font-weight: bolder,
+      display: block,
+    ),
+  ),
+  option: (
+    "styles": (
+      font-weight: normal,
+      display: block,
+      padding-block: 1px,
+      min-block-size: auto,
+      padding-inline: 2px,
+      white-space: nowrap,
+    ),
+  ),
+  output: (
+    "styles": (
+      display: inline,
+      unicode-bidi: isolate,
+    ),
+  ),
+  p: (
+    "styles": (
+      display: block,
+      margin-block: 1em,
+      margin-inline: 0,
+      unicode-bidi: isolate,
+    ),
+  ),
+  param: (
+    "styles": (
+      display: none,
+    ),
+  ),
+  progress: (
+    "styles": (
+      appearance: auto,
+      box-sizing: border-box,
+      display: inline-block,
+      block-size: 1em,
+      inline-size: 10em,
+      vertical-align: -0.2em,
+    ),
+  ),
+  q: (
+    "styles": (
+      display: inline,
+    ),
+  ),
+  ruby: (
+    "styles": (
+      display: ruby,
+    ),
+  ),
+  s: (
+    "styles": (
+      text-decoration: line-through,
+    ),
+  ),
+  samp: (
+    "styles": (
+      text-decoration: monospace,
+    ),
+  ),
+  script: (
+    "styles": (
+      display: none,
+    ),
+  ),
+  span: (
+    "styles": (
+      display: inline,
+      color: inherit,
+      line-height: inherit,
+      font-size: inherit,
+      font-weight: inherit,
+      letter-spacing: inherit,
+    ),
+  ),
+  strong: (
+    "styles": (
+      font-weight: bolder,
+    ),
+  ),
+  style: (
+    "styles": (
+      display: none,
+    ),
+  ),
+  sub: (
+    "styles": (
+      vertical-align: sub,
+      font-size: 12px,
+    ),
+  ),
+  sup: (
+    "styles": (
+      vertical-align: super,
+      font-size: 12px,
+    ),
+  ),
+  summary: (
+    "styles": (
+      display: block,
+      unicode-bidi: isolate,
+    ),
+  ),
+  table: (
+    "styles": (
+      display: table,
+      border-collapse: collapse,
+      box-sizing: border-box,
+      text-indent: initial,
+      unicode-bidi: isolate,
+      border-spacing: 2px,
+      border-color: gray,
+    ),
+  ),
+  tfoot: (
+    "styles": (
+      display: table-footer-group,
+      vertical-align: middle,
+      unicode-bidi: isolate,
+      border-color: inherit,
+    ),
+  ),
+  thead: (
+    "styles": (
+      display: table-header-group,
+      vertical-align: middle,
+      unicode-bidi: isolate,
+      border-color: inherit,
+    ),
+  ),
+  tbody: (
+    "styles": (
+      display: table-row-group,
+      vertical-align: middle,
+      unicode-bidi: isolate,
+      border-color: inherit,
+    ),
+  ),
+  tr: (
+    "styles": (
+      display: table-row,
+      vertical-align: middle,
+      unicode-bidi: isolate,
+      border-color: inherit,
+    ),
+  ),
+  th: (
+    "styles": (
+      display: table-cell,
+      vertical-align: inherit,
+      font-weight: bold,
+      text-align: inherit,
+      unicode-bidi: isolate,
+    ),
+  ),
+  td: (
+    "styles": (
+      display: table-cell,
+      vertical-align: inherit,
+      text-align: inherit,
+      unicode-bidi: isolate,
+    ),
+  ),
+  u: (
+    "styles": (
+      text-decoration: underline,
+    ),
+  ),
+  ul: (
+    "styles": (
+      display: block,
+      list-style-type: disc,
+      margin-block-start: 1em,
+      margin-block-end: 1em,
+      margin-inline-start: 0,
+      margin-inline-end: 0,
+      padding-inline-start: 40px,
+      unicode-bidi: isolate,
+    ),
+  ),
+  var: (
+    "styles": (
+      font-style: italic,
+    ),
+  ),
+  video: (
+    "styles": (
+      object-fit: contain,
+      overflow-clip-margin: content-box,
+      overflow: clip,
+    ),
+  ),
+);

@@ -1,0 +1,51 @@
+@use "sass:map";
+
+@each $tag, $map in $reboot {
+  #{$tag},
+  .#{$tag} {
+    $attrs: map.get($map, "attr");
+    $styles: map.get($map, "styles");
+    $pseudo-classes: map.get($map, "pseudo-class");
+
+    @if $styles {
+      @each $key, $style in $styles {
+        #{$key}: #{$style};
+      }
+    }
+
+    @if $pseudo-classes {
+      @each $pseudo-class, $pseudo-class-inner in $pseudo-classes {
+        $pseudo-class-attrs: map.get($pseudo-class-inner, "attr");
+        $pseudo-class-styles: map.get($pseudo-class-inner, "styles");
+
+        @if $pseudo-class-styles {
+          &:#{$pseudo-class} {
+            @each $key, $style in $pseudo-class-styles {
+              #{$key}: #{$style};
+            }
+          }
+        }
+
+        @if $pseudo-class-attrs {
+          @each $attr, $attr-inner in $pseudo-class-attrs {
+            &:#{$pseudo-class}(#{$attr}) {
+              @each $key, $style in $attr-inner {
+                #{$key}: #{$style};
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @if $attrs {
+      @each $attr, $attr-inner in $attrs {
+        &[#{$attr}] {
+          @each $key, $style in $attr-inner {
+            #{$key}: #{$style};
+          }
+        }
+      }
+    }
+  }
+}
