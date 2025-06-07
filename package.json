@@ -12,10 +12,10 @@
     "css",
     "sass"
   ],
-	"files": ["lib/*", "dist/*"],
-	"main": "./dist/rebootcss.min.css",
-	"css": "./dist/rebootcss.css",
-	"scss": "./lib/rebootcss.scss",
+	"files": ["scss/*", "dist/*"],
+	"main": "./dist/reboot.min.css",
+	"css": "./dist/reboot.css",
+	"scss": "./scss/reboot.scss",
 	"license": "MIT",
 	"devDependencies": {
 		"postcss": "^8.4.41",
@@ -27,12 +27,11 @@
 	},
 	"dependencies": {},
 	"scripts": {
-		"compile": "sass lib/rebootcss.scss:dist/rebootcss.css && sass lib/rebootcss.scss:dist/rebootcss.min.css --style compressed",
-		"watch-compile": "sass --watch lib/rebootcss.scss:dist/rebootcss.css && sass --watch lib/rebootcss.scss:dist/rebootcss.min.css --style compressed",
+		"compile": "sass scss/reboot.scss:dist/reboot.css && sass scss/reboot.scss:dist/reboot.min.css --style compressed",
+		"watch-compile": "sass --watch scss/reboot.scss:dist/reboot.css && sass scss/reboot.scss:dist/reboot.min.css --style compressed",
 		"format": "prettier . --write",
-		"lint": "npx stylelint '**/*.{css,scss}' --fix",
-		"prefix": "npx postcss **/*.css --use autoprefixer -d dist/",
-		"go": "yarn compile && yarn prefix && yarn format && yarn lint"
+		"lint": "bun x stylelint '**/*.{css,scss}' --fix",
+		"go": "bun run compile && bun run prefix && bun run format && bun run lint"
 	},
 	"browserslist": [
 		">0.1%"
