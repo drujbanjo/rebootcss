@@ -96,15 +96,11 @@ address {
   line-height: inherit;
 }
 
-%list {
+ol,
+ul {
   margin-top: var(--lists-margin-top);
   margin-bottom: var(--lists-margin-bottom);
   padding-left: var(--lists-padding-left);
-}
-
-ol,
-ul {
-  @extend %list;
 
   ol,
   ul {
@@ -185,7 +181,7 @@ button {
   border-radius: var(--button-radius);
   padding: var(--button-padding);
   cursor: pointer;
-  outline: none;
+  outline: none !important;
   overflow: visible;
   white-space: nowrap;
   user-select: none;

@@ -1,18 +1,21 @@
 {
 	"name": "@drujbanjo/rebootcss",
-	"version": "1.0.0",
-	"description": "restarting your site's styles",
+	"version": "1.1.0",
+	"description": "Rester styles in your project",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Drugban/rebootcss"
+		"url": "git+https://github.com/Drugban/rebootcss.git"
 	},
 	"keywords": [
-    "normalize",
-    "library",
-    "css",
-    "sass"
-  ],
-	"files": ["scss/*", "dist/*"],
+		"normalize",
+		"library",
+		"css",
+		"sass"
+	],
+	"files": [
+		"scss/*",
+		"dist/*"
+	],
 	"main": "./dist/reboot.min.css",
 	"css": "./dist/reboot.css",
 	"scss": "./scss/reboot.scss",
