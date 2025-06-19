@@ -1,6 +1,6 @@
 {
 	"name": "@drujbanjo/rebootcss",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"description": "Rester styles in your project",
 	"repository": {
 		"type": "git",
@@ -25,6 +25,7 @@
 		"prettier": "^3.3.3",
 		"sass": "^1.77.8",
 		"stylelint": "^16.8.2",
+		"stylelint-config-recommended-scss": "^15.0.1",
 		"stylelint-config-standard": "^36.0.1",
 		"stylelint-config-standard-scss": "^13.1.0"
 	},
