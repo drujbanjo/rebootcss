@@ -1,10 +1,4 @@
 :root {
-  --base-line-height: 1.2;
-  --base-font-family: sans-serif;
-  --background: #fff;
-  --color: #000;
-  --base-font-size: 1rem;
-  --base-font-weight: normal;
   --headings-font-weight: bold;
   --headings-color: inherit;
   --headings-margin-top: 0;
@@ -24,8 +18,8 @@
   --lists-padding-left: 2rem;
   --lists-list-margin-bottom: 0;
   --b-color: inherit;
-  --b-font-size: var(--base-font-size);
-  --b-font-family: var(--base-font-family);
+  --b-font-size: 1rem;
+  --b-font-family: sans-serif;
   --b-font-weight: bolder;
   --pre-font-size: 1rem;
   --pre-color: inherit;
@@ -39,10 +33,10 @@
   --kbd-padding: 0.1875rem 0.375rem;
   --kbd-radius: 0.1875rem;
   --kbd-bg: rgba(0 0 0 / 10%);
-  --button-font-family: var(--base-font-familu);
-  --button-font-size: var(--base-font-size);
-  --button-font-weight: var(--base-font-weight);
-  --button-color: var(--color);
+  --button-font-family: sans-serif;
+  --button-font-size: 1rem;
+  --button-font-weight: 500;
+  --button-color: #000;
   --button-bg: transparent;
   --button-border-width: 1px;
   --button-border-style: solid;
@@ -50,10 +44,10 @@
   --button-radius: 0.25rem;
   --button-padding: 0.375rem 0.75rem;
   --button-disabled-opacity: 0.8;
-  --input-font-family: var(--base-font-family);
-  --input-font-size: var(--base-font-size);
-  --input-font-weight: var(--base-font-weight);
-  --input-color: var(--color);
+  --input-font-family: sans-serif;
+  --input-font-size: 1rem;
+  --input-font-weight: normal;
+  --input-color: #000;
   --input-bg: transparent;
   --input-border-width: 1px;
   --input-border-style: solid;
@@ -76,21 +70,20 @@
 
 html {
   width: 100vw;
-  line-height: var(--base-line-height);
+  line-height: 1.2;
   scroll-behavior: smooth;
 }
 
 body {
   width: 100%;
-  background-color: var(--background);
-  color: var(--color);
-  font-family: var(--base-font-family);
-  font-size: var(--base-font-size);
-  font-weight: var(--base-font-weight);
+  background-color: #fff;
+  color: #000;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
   font-style: normal;
   overflow: hidden auto;
   position: relative;
-  text-align: var(--text-align);
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -303,7 +296,7 @@ button:disabled {
 
 input {
   display: inline-block;
-  color: var(--color);
+  color: var(--input-color);
 }
 input[type=text], input[type=number], input[type=email], input[type=password], input[type=tel] {
   font-family: var(--input-font-family);

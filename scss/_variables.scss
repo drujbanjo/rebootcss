@@ -1,20 +1,4 @@
-$base-line-height: 1.2 !default;
-$base-font-family: sans-serif !default;
-$background: #fff !default;
-$color: #000 !default;
-$base-font-size: 1rem !default;
-$base-font-weight: normal !default;
-
 :root {
-  //  base
-
-  --base-line-height: #{$base-line-height};
-  --base-font-family: #{$base-font-family};
-  --background: #{$background};
-  --color: #{$color};
-  --base-font-size: #{$base-font-size};
-  --base-font-weight: #{$base-font-weight};
-
   //	heading
 
   --headings-font-weight: bold;
@@ -50,8 +34,8 @@ $base-font-weight: normal !default;
   // b/strong
 
   --b-color: inherit;
-  --b-font-size: var(--base-font-size);
-  --b-font-family: var(--base-font-family);
+  --b-font-size: 1rem;
+  --b-font-family: sans-serif;
   --b-font-weight: bolder;
 
   // code/kbd/pre
@@ -71,10 +55,10 @@ $base-font-weight: normal !default;
 
   // button
 
-  --button-font-family: var(--base-font-familu);
-  --button-font-size: var(--base-font-size);
-  --button-font-weight: var(--base-font-weight);
-  --button-color: var(--color);
+  --button-font-family: sans-serif;
+  --button-font-size: 1rem;
+  --button-font-weight: 500;
+  --button-color: #000;
   --button-bg: transparent;
   --button-border-width: 1px;
   --button-border-style: solid;
@@ -84,10 +68,10 @@ $base-font-weight: normal !default;
   --button-disabled-opacity: 0.8;
 
   // input
-  --input-font-family: var(--base-font-family);
-  --input-font-size: var(--base-font-size);
-  --input-font-weight: var(--base-font-weight);
-  --input-color: var(--color);
+  --input-font-family: sans-serif;
+  --input-font-size: 1rem;
+  --input-font-weight: normal;
+  --input-color: #000;
   --input-bg: transparent;
   --input-border-width: 1px;
   --input-border-style: solid;
