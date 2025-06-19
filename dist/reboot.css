@@ -293,7 +293,8 @@ button {
   border-radius: var(--button-radius);
   padding: var(--button-padding);
   cursor: pointer;
-  outline: none;
+  outline-width: 0 !important;
+  outline-style: none !important;
   overflow: visible;
   white-space: nowrap;
   user-select: none;
@@ -378,3 +379,5 @@ input[type="datetime-local"],
 input[type="month"] {
   -webkit-appearance: listbox;
 }
+
+/*# sourceMappingURL=reboot.css.map */

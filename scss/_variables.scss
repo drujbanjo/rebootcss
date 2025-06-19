@@ -8,12 +8,12 @@ $base-font-weight: normal !default;
 :root {
   //  base
 
-  --base-line-height: $base-line-height;
-  --base-font-family: $base-font-family;
-  --background: $background;
-  --color: $color;
-  --base-font-size: $base-font-size;
-  --base-font-weight: $base-font-weight;
+  --base-line-height: 1.2;
+  --base-font-family: sans-serif;
+  --background: #{$background};
+  --color: #{$color};
+  --base-font-size: 1rem;
+  --base-font-weight: normal;
   --text-align: left;
 
   //	heading
