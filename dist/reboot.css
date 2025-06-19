@@ -1,4 +1,5 @@
 :root {
+  --font-family: "Inter", system-ui, sans-serif;
   --headings-font-weight: bold;
   --headings-color: inherit;
   --headings-margin-top: 0;
@@ -19,7 +20,6 @@
   --lists-list-margin-bottom: 0;
   --b-color: inherit;
   --b-font-size: 1rem;
-  --b-font-family: sans-serif;
   --b-font-weight: bolder;
   --pre-font-size: 1rem;
   --pre-color: inherit;
@@ -33,7 +33,6 @@
   --kbd-padding: 0.1875rem 0.375rem;
   --kbd-radius: 0.1875rem;
   --kbd-bg: rgba(0 0 0 / 10%);
-  --button-font-family: sans-serif;
   --button-font-size: 1rem;
   --button-font-weight: 500;
   --button-color: #000;
@@ -44,7 +43,6 @@
   --button-radius: 0.25rem;
   --button-padding: 0.375rem 0.75rem;
   --button-disabled-opacity: 0.8;
-  --input-font-family: sans-serif;
   --input-font-size: 1rem;
   --input-font-weight: normal;
   --input-color: #000;
@@ -57,6 +55,123 @@
   --input-placeholder-color: #424b52;
 }
 
+/* Inter 100 Thin */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ThinItalic.woff2") format("woff2");
+  font-weight: 100;
+  font-style: italic;
+}
+/* Inter 200 ExtraLight */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraLightItalic.woff2") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+}
+/* Inter 300 Light */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+/* Inter 400 Regular */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+/* Inter 500 Medium */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+/* Inter 600 SemiBold */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}
+/* Inter 700 Bold */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+/* Inter 800 ExtraBold */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-ExtraBoldItalic.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+}
+/* Inter 900 Black */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-BlackItalic.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+}
 *,
 *::before,
 *::after {
@@ -78,7 +193,7 @@ body {
   width: 100%;
   background-color: #fff;
   color: #000;
-  font-family: sans-serif;
+  font-family: var(--font-family);
   font-size: 1rem;
   font-weight: normal;
   font-style: normal;
@@ -213,7 +328,6 @@ b,
 strong {
   color: var(--b-color);
   font-size: var(--b-font-size);
-  font-family: var(--b-font-family);
   font-weight: var(--b-font-weight);
 }
 
@@ -267,7 +381,6 @@ label {
 
 button {
   display: inline-block;
-  font-family: var(--button-font-family);
   font-size: var(--button-font-size);
   font-weight: var(--button-font-weight);
   line-height: var(--button-line-height);
@@ -299,7 +412,6 @@ input {
   color: var(--input-color);
 }
 input[type=text], input[type=number], input[type=email], input[type=password], input[type=tel] {
-  font-family: var(--input-font-family);
   font-size: var(--input-font-size);
   font-weight: var(--input-font-weight);
   line-height: var(--input-line-height);

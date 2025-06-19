@@ -1,4 +1,6 @@
 :root {
+  --font-family: "Inter", system-ui, sans-serif;
+
   //	heading
 
   --headings-font-weight: bold;
@@ -35,7 +37,6 @@
 
   --b-color: inherit;
   --b-font-size: 1rem;
-  --b-font-family: sans-serif;
   --b-font-weight: bolder;
 
   // code/kbd/pre
@@ -55,7 +56,6 @@
 
   // button
 
-  --button-font-family: sans-serif;
   --button-font-size: 1rem;
   --button-font-weight: 500;
   --button-color: #000;
@@ -68,7 +68,6 @@
   --button-disabled-opacity: 0.8;
 
   // input
-  --input-font-family: sans-serif;
   --input-font-size: 1rem;
   --input-font-weight: normal;
   --input-color: #000;
