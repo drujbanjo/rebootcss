@@ -4,7 +4,7 @@
 	"description": "Rester styles in your project",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Drugban/rebootcss.git"
+		"url": "git+https://github.com/drujbanjo/rebootcss"
 	},
 	"keywords": [
 		"normalize",
@@ -14,11 +14,13 @@
 	],
 	"files": [
 		"scss/*",
-		"dist/*"
+		"dist/*",
+		"fonts/*"
 	],
 	"main": "./dist/reboot.min.css",
 	"css": "./dist/reboot.css",
 	"scss": "./scss/reboot.scss",
+	"fonts": "./fonts/*",
 	"license": "MIT",
 	"devDependencies": {
 		"postcss": "^8.4.41",
