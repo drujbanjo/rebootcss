@@ -167,6 +167,7 @@ label {
 button {
   display: inline-block;
   font-size: var(--button-font-size);
+  font-family: var(--font-family);
   font-weight: var(--button-font-weight);
   line-height: var(--button-line-height);
   color: var(--button-color);
@@ -197,6 +198,7 @@ button {
 input {
   display: inline-block;
   color: var(--input-color);
+  font-family: var(--font-family);
 
   &[type="text"],
   &[type="number"],
